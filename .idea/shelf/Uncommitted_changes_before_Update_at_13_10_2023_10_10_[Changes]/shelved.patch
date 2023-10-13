@@ -1,0 +1,19 @@
+Index: src/model/Restaurant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package model;\r\n\r\npublic class Restaurant {\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/model/Restaurant.java b/src/model/Restaurant.java
+--- a/src/model/Restaurant.java	
++++ b/src/model/Restaurant.java	
+@@ -1,5 +1,10 @@
+ package model;
+ 
+ public class Restaurant {
++	private String name;
++	private Phone phone;
+ 
++	public Restaurant(String name, Phone phone){
++
++	}
+ }
