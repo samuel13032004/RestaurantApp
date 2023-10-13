@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="class commit">
+    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="atributos commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MenuType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MenuType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;experimentalPlugin&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -75,6 +74,9 @@
       <workItem from="1697183634563" duration="617000" />
       <workItem from="1697185042202" duration="63000" />
       <workItem from="1697185214468" duration="505000" />
+      <workItem from="1697186308584" duration="137000" />
+      <workItem from="1697186465471" duration="353000" />
+      <workItem from="1697187155388" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="class commit">
       <option name="closed" value="true" />
@@ -100,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697185054928</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="atributos commit">
+      <option name="closed" value="true" />
+      <created>1697186344877</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697186344877</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +129,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="class commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="class commit" />
+    <MESSAGE value="atributos commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="atributos commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

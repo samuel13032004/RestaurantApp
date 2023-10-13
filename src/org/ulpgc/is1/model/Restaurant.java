@@ -1,4 +1,4 @@
-package model;
+package org.ulpgc.is1.model;
 
 public class Restaurant {
 
