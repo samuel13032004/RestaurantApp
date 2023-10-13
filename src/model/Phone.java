@@ -18,7 +18,6 @@ public class Phone {
 		if (number.length() == 9){
 			return true;
 		} else {
-			setNumber("XXXX");
 			return false;
 		}
 	}
