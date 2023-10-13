@@ -21,9 +21,24 @@ public class Customer {
 
     private String surname;
 
-    public Customer(String name, String surname){
+    private Address address;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    //public void setAddress(Address address) {
+        this.address = new Address(street,
+                number,
+                postalCode,
+                city);
+
+    }
+
+    public Customer(String name, String surname, String street, int number, int postalCode, String city){
 
         this.name = name;
         this.surname = surname;
+        //this.address = new Address(street, number, postalCode, city);
     }
 }

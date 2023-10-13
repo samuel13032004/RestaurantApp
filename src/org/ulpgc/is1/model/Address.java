@@ -46,4 +46,9 @@ public class Address {
         this.postalCode = postalCode;
         this.city = city;
     }
+
+    public Address(){
+        this.address = setAddress(street, int number, int postalCode, String city);
+
+    }
 }
