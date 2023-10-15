@@ -19,6 +19,4 @@ public class Order {
         orderItem.add(orderItem1);
     }
 
-    public void price(){
-    }
 }
