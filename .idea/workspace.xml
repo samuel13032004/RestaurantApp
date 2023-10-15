@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="Order class commit">
+    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="atributos commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,47 +111,7 @@
       <option name="project" value="LOCAL" />
       <updated>1697186344877</updated>
     </task>
-    <task id="LOCAL-00005" summary="Customer aggregation commit">
-      <option name="closed" value="true" />
-      <created>1697364533325</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1697364533325</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Customer aggregation commit edit">
-      <option name="closed" value="true" />
-      <created>1697365310900</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1697365310900</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Order class commit">
-      <option name="closed" value="true" />
-      <created>1697366385874</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1697366385874</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Order class commit">
-      <option name="closed" value="true" />
-      <created>1697366401973</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1697366401973</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Order class commit">
-      <option name="closed" value="true" />
-      <created>1697366477770</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1697366477770</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,10 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="class commit" />
     <MESSAGE value="atributos commit" />
-    <MESSAGE value="Customer aggregation commit" />
-    <MESSAGE value="Customer aggregation commit edit" />
-    <MESSAGE value="Order class commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Order class commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="atributos commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

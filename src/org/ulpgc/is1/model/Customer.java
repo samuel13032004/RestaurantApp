@@ -29,10 +29,14 @@ public class Customer {
         Address a = new Address(street, number, postalCode, city);
         address.add(a);
     }
+    //creamos una nueva lista
+    private ArrayList<Order> orders;
+
 
     public Customer(String name, String surname){
 
         this.name = name;
         this.surname = surname;
+        this.orders = new ArrayList<Order>();
     }
 }
