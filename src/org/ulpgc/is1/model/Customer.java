@@ -24,7 +24,7 @@ public class Customer {
     private String surname;
 
     private ArrayList<Address> address;
-
+    //añadimos una lista
     public void addAddress(String street, int number, int postalCode, String city) {
         Address a = new Address (street, number, postalCode, city);
         address.add( a );
