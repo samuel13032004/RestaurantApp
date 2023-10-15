@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class Customer {
     private String name;
 
+    private ArrayList<Address> address;
+
     public String getName() {
         return name;
     }
@@ -23,14 +25,12 @@ public class Customer {
 
     private String surname;
 
-    private ArrayList<Address> address;
-    //añadimos una lista
     public void addAddress(String street, int number, int postalCode, String city) {
-        Address a = new Address (street, number, postalCode, city);
-        address.add( a );
+        Address a = new Address(street, number, postalCode, city);
+        address.add(a);
     }
 
-    public Customer(String name, String surname, String street, int number, int postalCode, String city){
+    public Customer(String name, String surname){
 
         this.name = name;
         this.surname = surname;
