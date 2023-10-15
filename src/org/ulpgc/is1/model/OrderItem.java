@@ -13,14 +13,6 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
-    public Dish getDish() {
-        return dish;
-    }
-
-    public void setDish(Dish dish) {
-        this.dish = dish;
-    }
-
     public OrderItem(int quantity, Dish dish){
 
         this.quantity = quantity;
