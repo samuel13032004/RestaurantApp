@@ -1,9 +1,14 @@
 package org.ulpgc.is1.model;
 
+import java.util.ArrayList;
+
 public class Menu {
     private String name;
 
     private MenuType menuType;
+
+    private ArrayList<Dish>dishes;
+
     public String getName() {
         return name;
     }
@@ -24,6 +29,9 @@ public class Menu {
 
         this.name = name;
         this.menuType = menuType;
+        dishes = new ArrayList<Dish>();
     }
-
+    public void addDish(Dish dish){
+        dishes.add(dish);
+    }
 }

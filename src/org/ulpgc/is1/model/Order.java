@@ -7,7 +7,7 @@ public class Order {
     private final int id;
 
     private Customer customer;
-    private ArrayList<Customer> c:
+    private ArrayList<Customer> c;
     private ArrayList<OrderItem> orderItem;
     public void addOrderItem(int quantity, Dish dish) {
         OrderItem orderItem1 = new OrderItem(quantity, dish);
@@ -17,6 +17,5 @@ public class Order {
         this.id = NEXT_ID++;
         this.c = new ArrayList<Customer>();
         this.customer = new Customer();
-
     }
 }

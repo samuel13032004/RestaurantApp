@@ -33,7 +33,7 @@ public class Customer {
     private ArrayList<Order> orders;
 
 
-    public Customer(String name, String surname){
+    public Customer(){
 
         this.name = name;
         this.surname = surname;
