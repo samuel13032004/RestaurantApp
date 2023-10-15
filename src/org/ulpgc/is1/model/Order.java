@@ -18,5 +18,4 @@ public class Order {
         OrderItem orderItem1 = new OrderItem(quantity, dish);
         orderItem.add(orderItem1);
     }
-
 }
