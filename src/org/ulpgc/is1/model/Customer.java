@@ -30,9 +30,13 @@ public class Customer {
         address.add(a);
     }
 
+    private ArrayList<Order> orders;
+
+
     public Customer(String name, String surname){
 
         this.name = name;
         this.surname = surname;
+        this.orders = new ArrayList<Order>();
     }
 }
