@@ -1,7 +1,11 @@
 package org.ulpgc.is1.model;
 
+import java.util.ArrayList;
+
 public class Customer {
     private String name;
+
+    private ArrayList<Address> address;
 
     public String getName() {
         return name;
@@ -27,12 +31,9 @@ public class Customer {
         return address;
     }
 
-    //public void setAddress(Address address) {
-        this.address = new Address(street,
-                number,
-                postalCode,
-                city);
-
+    public void addAddress(String street, int number, int postalCode, String city) {
+        Address a = new Address(street, number, postalCode, city);
+        address.add(a);
     }
 
     public Customer(String name, String surname, String street, int number, int postalCode, String city){
