@@ -1,12 +1,16 @@
 package org.ulpgc.is1.model;
 
+import java.util.ArrayList;
+
 public class Restaurant {
 	private String name;
 	private Phone phone;
+	private ArrayList<Menu> menus;
 
 	public Restaurant(String name, Phone phone){
 		this.name = name;
 		this.phone = phone;
+		this.menus = new ArrayList<Menu>();
 	}
 
 	public String getName() {
@@ -24,5 +28,10 @@ public class Restaurant {
 	public void setPhone(Phone phone) {
 		this.phone = phone;
 	}
-	//TODO addMenu()
+	public void addMenu(Menu newMenu){
+		this.menus.add(newMenu);
+	}
+	public Menu getMenu(int i){
+		return this.menus.get(i);
+	}
 }
