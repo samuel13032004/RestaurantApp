@@ -6,11 +6,13 @@ public class Restaurant {
 	private String name;
 	private Phone phone;
 	private ArrayList<Menu> menus;
+	private ArrayList<Order> orders;
 
 	public Restaurant(String name, Phone phone){
 		this.name = name;
 		this.phone = phone;
 		this.menus = new ArrayList<Menu>();
+		this.orders = new ArrayList<Order>();
 	}
 
 	public String getName() {

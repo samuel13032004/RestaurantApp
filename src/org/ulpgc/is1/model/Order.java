@@ -9,13 +9,21 @@ public class Order {
     private Customer customer;
     private ArrayList<Customer> c;
     private ArrayList<OrderItem> orderItem;
+
+    private Restaurant restaurant;
+    private ArrayList<Restaurant> restaurants;
+
     public void addOrderItem(int quantity, Dish dish) {
         OrderItem orderItem1 = new OrderItem(quantity, dish);
         orderItem.add(orderItem1);
     }
-    public Order(Customer customer) {
+    public Order(Customer customer, Restaurant restaurant) {
         this.id = NEXT_ID++;
-        this.c = new ArrayList<Customer>();
         this.customer = new Customer();
+        this.c = new ArrayList<Customer>();
+        this.restaurant = new Restaurant();
+        this.restaurants = new ArrayList<Restaurant>();
+
+
     }
 }
