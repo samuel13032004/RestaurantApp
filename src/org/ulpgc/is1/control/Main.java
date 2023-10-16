@@ -10,14 +10,13 @@ public class Main {
         //vi. Imprimir por pantalla los datos del tercer plato.
         //vii. Crear un pedido por parte del primer cliente, al primer restaurante, que
         //incluya los dos últimos platos del catálogo. (*) Sugerencia: para especificar los
-        platos y la cantidad de ellos, se pueden utilizar dos ArrayList<Integer> que indiquen la
-        posición del plato en el catálogo y la cantidad de dicho plato, respectivamente.
-        //(void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer>
-                quantity))
+        //platos y la cantidad de ellos, se pueden utilizar dos ArrayList<Integer> que indiquen la
+        //posición del plato en el catálogo y la cantidad de dicho plato, respectivamente.//(void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer> quantity))
         //viii. Borrar el segundo cliente.
         //ix. Imprimir por pantalla el número de clientes.
         //x. Imprimir por pantalla el primer pedido del primer cliente, incluyendo el precio total del pedido.
 
 
+        //nuevo comentario
     }
 }
