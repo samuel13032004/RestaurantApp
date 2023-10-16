@@ -7,7 +7,7 @@
     <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697453417811</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit MAIN">
+      <option name="closed" value="true" />
+      <created>1697479659382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697479659382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +210,8 @@
     <MESSAGE value="Menu class commit" />
     <MESSAGE value="prueba decommit" />
     <MESSAGE value="prueba de commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="prueba de commit" />
+    <MESSAGE value="commit MAIN" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit MAIN" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
