@@ -18,4 +18,9 @@ public class OrderItem {
         this.quantity = quantity;
         this.dish = dish;
     }
+
+    public int price() {
+        return dish.getPrice() * quantity;
+    }
+
 }

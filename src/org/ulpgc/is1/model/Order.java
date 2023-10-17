@@ -1,5 +1,6 @@
 package org.ulpgc.is1.model;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Order {
@@ -24,7 +25,13 @@ public class Order {
         this.restaurant = new Restaurant();
         this.restaurants = new ArrayList<Restaurant>();
 
-
     }
 
+    public int price() {
+        int totalPrice = 0;
+        for (OrderItem item : orderItem) {
+            totalPrice += item.price();
+        }
+        return totalPrice;
+    }
 }

@@ -1,15 +1,13 @@
 package org.ulpgc.is1.control;
 
-import org.ulpgc.is1.model.Customer;
-import org.ulpgc.is1.model.Dish;
-import org.ulpgc.is1.model.Restaurant;
-import org.ulpgc.is1.model.Address;
-import org.ulpgc.is1.model.OrderManager;
+import org.ulpgc.is1.model.*;
+
 public class Main {
     public static void main(String[] args) {
         //i. Init. Crear dos clientes.
         Customer customer1 = new Customer("Juan", "García", "León y Castillo", "3", "3544", "Las Palmas");
-        Customer customer2 = new Customer("Juan", "García", "León y Castillo", "3", "3544", "Las Palmas");
+        Customer customer2 = new Customer("Juan", "García", "León y Castillo", 3, 3544, "Las Palmas");
+
         //ii. Init. Crear dos restaurantes. (*) En el caso que el restaurante tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
         Restaurant restaurant1 = new Restaurant("Restaurante1", "12345689");
         Restaurant restaurant2 = new Restaurant("Restaurante2", "XXXX");
@@ -36,7 +34,7 @@ public class Main {
         System.out.println("Número de clientes: " + Restaurant.getCustomerCount());
         //x. Imprimir por pantalla el primer pedido del primer cliente, incluyendo el precio total del pedido.
         System.out.println("Primer pedido del primer cliente:");
-
-
+        OrderItem firstOrder = new OrderItem(2, dish1);
+        Order firstOrder = customer1.orders().get(1);
     }
 }
