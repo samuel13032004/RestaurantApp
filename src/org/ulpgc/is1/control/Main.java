@@ -5,10 +5,10 @@ import org.ulpgc.is1.model.*;
 public class Main {
     public static void main(String[] args) {
         //i. Init. Crear dos clientes.
-        Address address1 = new Address("León y Castillo", "3", "3544", "Las Palmas");
+        Address address1 = new Address("León y Castillo", 3, 3544, "Las Palmas");
         Customer customer1 = new Customer("Juan", "García", address1);
 
-        Address address2 = new Address("León y Castillo", "3", "3544", "Las Palmas");
+        Address address2 = new Address("León y Castillo", 3, 3544, "Las Palmas");
         Customer customer2 = new Customer("Andrés", "Martín", address2);
 
         //ii. Init. Crear dos restaurantes. (*) En el caso que el restaurante tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
