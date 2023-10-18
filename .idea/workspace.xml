@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="commit OrderManager agregaciones">
+    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
     </list>
@@ -204,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697620288681</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="commit Main">
+      <option name="closed" value="true" />
+      <created>1697665701915</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697665701915</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +254,8 @@
     <MESSAGE value="commit price() en order y OrderItem" />
     <MESSAGE value="commit main y en customer para pt1" />
     <MESSAGE value="commit OrderManager agregaciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit OrderManager agregaciones" />
+    <MESSAGE value="commit Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit Main" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -12,7 +12,9 @@ public class Main {
         Customer customer2 = new Customer("Andrés", "Martín", address2);
 
         //ii. Init. Crear dos restaurantes. (*) En el caso que el restaurante tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
+        //Phone phone1 = new Phone("123456789");
         Restaurant restaurant1 = new Restaurant("Restaurante1", "12345689");
+        //Restaurant restaurant1 = new Restaurant("Restaurante1", phone1);
         Restaurant restaurant2 = new Restaurant("Restaurante2", "XXXX");
         //iii. Init. Crear tres platos diferentes.
         Dish dish1 = new Dish("Plato1", "Descripción1", 10);
