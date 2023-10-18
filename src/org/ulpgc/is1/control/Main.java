@@ -22,10 +22,10 @@ public class Main {
         //iv. Imprimir por pantalla los datos del primer restaurante.
         System.out.printf("Datos del primer restaurante:%s%n", restaurant1);
         //v. Imprimir por pantalla los datos del segundo cliente.
-        System.out.println("Datos del segundo cliente:");
+        System.out.println("Datos del segundo cliente: "+ customer2);
 
         //vi. Imprimir por pantalla los datos del tercer plato.
-        System.out.println("Datos del tercer plato:");
+        System.out.println("Datos del tercer plato:"+ dish3);
 
         //vii. Crear un pedido por parte del primer cliente, al primer restaurante, que
         //incluya los dos últimos platos del catálogo. (*) Sugerencia: para especificar los
