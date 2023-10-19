@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Customer {
     private String name;
-
-    private ArrayList<Address> address;
+    //quitar array list de address
+    private ArrayList <Address> address;
 
     public String getName() {
         return name;

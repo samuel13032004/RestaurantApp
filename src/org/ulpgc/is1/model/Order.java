@@ -12,6 +12,7 @@ public class Order {
     private ArrayList<OrderItem> orderItem;
 
     private Restaurant restaurant;
+    //quitar arraylist de address
     private ArrayList<Restaurant> restaurants;
 
     public void addOrderItem(int quantity, Dish dish) {
@@ -24,6 +25,7 @@ public class Order {
         this.c = new ArrayList<Customer>();
         this.restaurant = new Restaurant();
         this.restaurants = new ArrayList<Restaurant>();
+        //añadir orderItem
 
     }
 

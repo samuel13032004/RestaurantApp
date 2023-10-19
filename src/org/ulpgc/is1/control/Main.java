@@ -21,6 +21,10 @@ public class Main {
         Dish dish2 = new Dish("Plato2", "Descripción2", 12);
         Dish dish3 = new Dish("Plato3", "Descripción3", 9);
 
+        Order order=new Order(customer1, restaurant1);
+        OrderItem orderItem= new OrderItem(2, dish1);
+        orderItem.price();
+
         //iv. Imprimir por pantalla los datos del primer restaurante.
         System.out.printf("Datos del primer restaurante:%s%n", restaurant1);
         //v. Imprimir por pantalla los datos del segundo cliente.
@@ -32,7 +36,8 @@ public class Main {
         //vii. Crear un pedido por parte del primer cliente, al primer restaurante, que
         //incluya los dos últimos platos del catálogo. (*) Sugerencia: para especificar los
         //platos y la cantidad de ellos, se pueden utilizar dos ArrayList<Integer> que indiquen la
-        //posición del plato en el catálogo y la cantidad de dicho plato, respectivamente.//(void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer> quantity))
+        //posición del plato en el catálogo y la cantidad de dicho plato, respectivamente.
+        // (void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer> quantity))
         //viii. Borrar el segundo cliente.
         Restaurant.removeCustomer(customer2);
         //ix. Imprimir por pantalla el número de clientes.
@@ -40,6 +45,6 @@ public class Main {
         //x. Imprimir por pantalla el primer pedido del primer cliente, incluyendo el precio total del pedido.
         System.out.println("Primer pedido del primer cliente:");
         OrderItem firstOrder = new OrderItem(2, dish1);
-        Order firstOrder = customer1.orders().get(1);
+        //Order firstOrder = customer1.orders().get(1);
     }
 }
