@@ -38,5 +38,7 @@ public class OrderManager {
     public Dish getDish(int id){
         return dishes.remove(id);
     }
-    public order(){}
+    public void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer> quantity){
+        
+    }
 }
