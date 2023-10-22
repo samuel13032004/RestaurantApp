@@ -6,6 +6,8 @@ public class Menu {
     private String name;
     private MenuType menuType;
 
+    private ArrayList<Restaurant> restaurants;
+
     private ArrayList<Dish>dishes;
 
     public String getName() {
@@ -25,7 +27,7 @@ public class Menu {
     }
 
     public Menu(String name, MenuType menuType){
-
+        this.restaurants = new ArrayList<Restaurant>();
         this.name = name;
         this.menuType = menuType;
         dishes = new ArrayList<Dish>();

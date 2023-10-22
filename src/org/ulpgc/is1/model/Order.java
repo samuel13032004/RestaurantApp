@@ -13,7 +13,7 @@ public class Order {
 
     private Restaurant restaurant;
     //quitar arraylist de address
-    private ArrayList<Restaurant> restaurants;
+    //private ArrayList<Restaurant> restaurants;
 
     public void addOrderItem(int quantity, Dish dish) {
         OrderItem orderItem1 = new OrderItem(quantity, dish);
@@ -21,10 +21,11 @@ public class Order {
     }
     public Order(Customer customer, Restaurant restaurant) {
         this.id = NEXT_ID++;
-        this.customer = new Customer();
+        this.customer = customer;
         //this.c = new ArrayList<Customer>();
         //this.restaurant = new Restaurant();
-        this.restaurants = new ArrayList<Restaurant>();
+        //this.restaurants = new ArrayList<Restaurant>();
+        this.restaurant = restaurant;
         //añadir orderItem
 
     }
