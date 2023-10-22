@@ -95,8 +95,9 @@ public class Main {
             System.out.println("Platos del pedido:");
             for (OrderItem item : firstOrder.getOrderItem()) {
                 Dish dish = ordermanager.getDish(item.getDishId());
-                System.out.println(" - " + dish.getName() + ": " + item.getQuantity() + " x $" + dish.getPrice());
+                System.out.println(" - " + dish.getName() + ": " + item.getQuantity() + " x €" + dish.getPrice());
             }
+
 
             // Calcula el precio total del pedido
             double total = firstOrder.price();
