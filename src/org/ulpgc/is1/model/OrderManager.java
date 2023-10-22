@@ -49,6 +49,18 @@ public class OrderManager {
 
     public void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer>
             quantity){
+        Order newOrder = new Order(customer, restaurant);
 
+        for (int i = 0; i < dishesId.size(); i++) {
+            int dishId = dishesId.get(i);
+            int dishQuantity = quantity.get(i);
+
+            if (dishId >= 0 && dishId < dishes.size()) {
+                Dish selectedDish = dishes.get(dishId);
+                newOrder.addOrderItem(dishQuantity, selectedDish);
+            } else {
+                System.out.println("Invalid dish ID: " + dishId);
+            }
+        }
     }
 }
