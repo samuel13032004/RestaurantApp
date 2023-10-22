@@ -4,11 +4,13 @@ import java.util.ArrayList;
 
 public class Restaurant {
 	private String name;
+	//private String phone;
 	private Phone phone;
 	private ArrayList<Menu> menus;
 	private ArrayList<Order> orders;
 
 	public Restaurant(String name, Phone phone){
+	//public Restaurant(String name, Phone phone){
 		this.name = name;
 		this.phone = phone;
 		this.menus = new ArrayList<Menu>();
@@ -27,6 +29,7 @@ public class Restaurant {
 		return phone;
 	}
 
+	//public void setPhone(String phone) {
 	public void setPhone(Phone phone) {
 		this.phone = phone;
 	}

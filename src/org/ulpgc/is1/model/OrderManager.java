@@ -12,6 +12,11 @@ public class OrderManager {
     private ArrayList<Restaurant> restaurants;
     private ArrayList<Dish> dishes;
 
+    public OrderManager() {
+        this.customers = new ArrayList<>();
+        this.restaurants = new ArrayList<>();
+        this.dishes = new ArrayList<>();
+    }
     public void addCustomer(String name, String surname){
     //public void addCustomer(String name, String surname, Address address){
         Customer it = new Customer (name, surname);
@@ -19,6 +24,7 @@ public class OrderManager {
         customers.add(it);
     }
 
+    //public void addRestaurant(String name,String phone) {
     public void addRestaurant(String name, Phone phone) {
 
         Restaurant itRestarurant = new Restaurant(name, phone);
@@ -32,6 +38,7 @@ public class OrderManager {
     }
 
     public Customer getCustomer(int id){
+    //public Customer getCustomer(int id){
         return customers.get(id);
     }
 
