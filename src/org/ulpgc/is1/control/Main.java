@@ -101,7 +101,7 @@ public class Main {
 
             // Calcula el precio total del pedido
             double total = firstOrder.price();
-            System.out.println("Precio total del pedido: $" + total);
+            System.out.println("Precio total del pedido: €" + total);
         } else {
             System.out.println("El cliente no ha realizado ningún pedido.");
         }
