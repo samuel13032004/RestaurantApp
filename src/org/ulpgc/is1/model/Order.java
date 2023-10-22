@@ -31,6 +31,14 @@ public class Order {
 
     }
 
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    public ArrayList<OrderItem> getOrderItem(){
+        return orderItem;
+    }
+
     public int price() {
         int totalPrice = 0;
         for (OrderItem item : orderItem) {

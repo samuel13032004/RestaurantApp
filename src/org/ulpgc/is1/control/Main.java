@@ -61,6 +61,9 @@ public class Main {
         //VII. crear order para primer cliente, al primer restaurante, que
         //incluya los dos últimos platos del catálogo.
 
+        Customer customer0 = ordermanager.getCustomer(0);
+        Restaurant restaurant0 = ordermanager.getRestaurant(0);
+
         ArrayList<Integer> dishesId = new ArrayList<>();
         dishesId.add(0);
         dishesId.add(1);
@@ -70,7 +73,7 @@ public class Main {
         quantity.add(1);
         quantity.add(1);
 
-        ordermanager.order(ordermanager.getCustomer(0), ordermanager.getRestaurant(0), dishesId, quantity);
+        ordermanager.order(customer0, restaurant0, dishesId, quantity);
 
 
         //viii. Borrar el segundo cliente.
@@ -81,5 +84,25 @@ public class Main {
         System.out.println("Número de clientes: " + ordermanager.getCustomersCount());
 
         //x. Imprimir por pantalla el primer pedido del primer cliente, incluyendo el precio total del pedido.
+        ArrayList<Order> customerOrders = customer0.getOrders();
+
+        if (!customerOrders.isEmpty()) {
+            Order firstOrder = customerOrders.get(0);
+
+            System.out.println("Pedido del cliente: " + customer0.getName() + " " + customer0.getSurname());
+            System.out.println("Restaurante: " + firstOrder.getRestaurant().getName());
+
+            System.out.println("Platos del pedido:");
+            for (OrderItem item : firstOrder.getOrderItem()) {
+                Dish dish = ordermanager.getDish(item.getDishId());
+                System.out.println(" - " + dish.getName() + ": " + item.getQuantity() + " x $" + dish.getPrice());
+            }
+
+            // Calcula el precio total del pedido
+            double total = firstOrder.price();
+            System.out.println("Precio total del pedido: $" + total);
+        } else {
+            System.out.println("El cliente no ha realizado ningún pedido.");
+        }
     }
 }

@@ -31,6 +31,13 @@ public class Customer {
     private ArrayList<Order> orders;
     //private Order order;
 
+    public ArrayList<Order> getOrders(){
+        return orders;
+    }
+
+    public void addOrder(Order order) {
+        this.orders.add(order);
+    }
 
     public Address getAddress() {
         return address;

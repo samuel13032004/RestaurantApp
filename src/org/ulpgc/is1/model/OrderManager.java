@@ -12,6 +12,8 @@ public class OrderManager {
     private ArrayList<Restaurant> restaurants;
     private ArrayList<Dish> dishes;
 
+    private ArrayList<Order> orderList;
+
     public OrderManager() {
         this.customers = new ArrayList<>();
         this.restaurants = new ArrayList<>();
@@ -66,6 +68,7 @@ public class OrderManager {
                 System.out.println("Invalid dish ID: " + dishId);
             }
         }
+        customer.addOrder(newOrder);
     }
 
     public int getCustomersCount(){
