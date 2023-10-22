@@ -32,6 +32,7 @@ public class Menu {
         this.menuType = menuType;
         dishes = new ArrayList<Dish>();
     }
+
     public void addDish(Dish dish){
         dishes.add(dish);
     }

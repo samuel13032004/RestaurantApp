@@ -32,6 +32,10 @@ public class Customer {
     //private Order order;
 
 
+    public Address getAddress() {
+        return address;
+    }
+
     public Customer(String name, String surname){
 
         this.name = name;
