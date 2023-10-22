@@ -24,10 +24,10 @@ public class OrderManager {
         Restaurant itRestarurant = new Restaurant(name, phone);
         restaurants.add(itRestarurant);
     }
-    public void addDish(String name, String description, int price, OrderItem quantity){
-    //public void addDish(String name, String description, int price){  no es necesarioo aqui poner cantidad
-        Dish itDish = new Dish(name, description, price, quantity);
-        //Dish itDish = new Dish(name, description, price);
+    //public void addDish(String name, String description, int price, OrderItem quantity){
+    public void addDish(String name, String description, int price){
+        //Dish itDish = new Dish(name, description, price, quantity);
+        Dish itDish = new Dish(name, description, price);
         dishes.add(itDish);
     }
 
@@ -43,8 +43,8 @@ public class OrderManager {
         return dishes.get(id);
     }
 
-    public Customer delCustomer(int id) {
-        return customers.remove(id);
+    public void delCustomer(int id) {
+        customers.remove(id);
     }
 
     public void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer> quantity){
@@ -59,6 +59,14 @@ public class OrderManager {
                 System.out.println("Invalid dish ID: " + dishId);
             }
         }
+    }
+
+    public int getCustomersCount(){
+        int count = 0;
+        for (int i = 0; i<customers.size();i++){
+            count++;
+        }
+        return count;
     }
 }
 
