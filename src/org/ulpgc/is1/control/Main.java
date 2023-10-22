@@ -38,12 +38,13 @@ public class Main {
 
         //iv. Imprimir por pantalla los datos del primer restaurante.
 
-        System.out.printf("Datos del primer restaurante: ", ordermanager.getRestaurant(0).getName() + ", "+ ordermanager.getRestaurant(0).getPhone()+"."+ "\n");
+        //System.out.printf("Datos del primer restaurante: ", ordermanager.getRestaurant(0).getName() + ", "+ ordermanager.getRestaurant(0).getPhone()+"."+ "\n");
 
+        System.out.println("Datos del primer restaurante: " + ordermanager.getRestaurant(0).getName() + ", ") ;
 
         //v. Imprimir por pantalla los datos del segundo cliente.
 
-        System.out.println("\nDatos del segundo cliente: "+ ordermanager.getCustomer(1)+", "+ ordermanager.getCustomer(1).getAddress());
+        System.out.println("Datos del segundo cliente: "+ ordermanager.getCustomer(1).getName() + " "+ ordermanager.getCustomer(1).getSurname());
 
         //vi. Imprimir por pantalla los datos del tercer plato.
 
