@@ -26,7 +26,7 @@ public class Customer {
     private String surname;
 
     public void addAddress(String street, int number, int postalCode, String city) {
-        Address a = new Address(street, number, postalCode, city);
+            address = new Address(street, number, postalCode, city);
     }
     private ArrayList<Order> orders;
     //private Order order;

@@ -7,6 +7,8 @@
     <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,9 @@
         <option name="url" value="https://github.com/samuel13032004/RestaurantApp.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -268,23 +273,7 @@
       <option name="project" value="LOCAL" />
       <updated>1697975005030</updated>
     </task>
-    <task id="LOCAL-00022" summary="commit main avance">
-      <option name="closed" value="true" />
-      <created>1697976937621</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1697976937621</updated>
-    </task>
-    <task id="LOCAL-00023" summary="commit main apartados 6, 8, 9 hechos bien">
-      <option name="closed" value="true" />
-      <created>1697981904599</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1697981904599</updated>
-    </task>
-    <option name="localTasksCounter" value="24" />
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,9 +321,7 @@
     <MESSAGE value="commit order manager y revisar multiplicidad de customer con order" />
     <MESSAGE value="commit main estructura" />
     <MESSAGE value="commit main new" />
-    <MESSAGE value="commit main avance" />
-    <MESSAGE value="commit main apartados 6, 8, 9 hechos bien" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit main apartados 6, 8, 9 hechos bien" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit main new" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

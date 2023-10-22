@@ -26,6 +26,7 @@ public class Order {
         //this.restaurant = new Restaurant();
         //this.restaurants = new ArrayList<Restaurant>();
         this.restaurant = restaurant;
+        this.orderItem = new ArrayList<>();
         //añadir orderItem
 
     }

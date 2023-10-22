@@ -2,6 +2,7 @@ package org.ulpgc.is1.control;
 
 import org.ulpgc.is1.model.*;
 
+import java.net.SocketOption;
 import java.util.ArrayList;
 
 public class Main {
@@ -46,12 +47,30 @@ public class Main {
 
         System.out.println("Datos del segundo cliente: "+ ordermanager.getCustomer(1).getName() + " "+ ordermanager.getCustomer(1).getSurname());
 
+        if (ordermanager.getCustomer(1).getAddress() != null) {
+            System.out.println("Dirección del segundo cliente: " + ordermanager.getCustomer(1).getAddress().getCity() + " " + ordermanager.getCustomer(1).getAddress().getStreet() +
+                    " " + ordermanager.getCustomer(1).getAddress().getNumber() + " " + ordermanager.getCustomer(1).getAddress().getPostalCode());
+        } else {
+            System.out.println("El segundo cliente no tiene una dirección registrada.");
+        }
+
         //vi. Imprimir por pantalla los datos del tercer plato.
 
         System.out.println("Datos del tercer plato: "+ ordermanager.getDish(2).getName() +" "+ ordermanager.getDish(2).getDescription() + ", " + ordermanager.getDish(2).getPrice()+" euros.");
 
+        //VII. crear order para primer cliente, al primer restaurante, que
+        //incluya los dos últimos platos del catálogo.
 
+        ArrayList<Integer> dishesId = new ArrayList<>();
+        dishesId.add(0);
+        dishesId.add(1);
+        dishesId.add(2);
+        ArrayList<Integer> quantity = new ArrayList<>();
+        quantity.add(0);
+        quantity.add(1);
+        quantity.add(1);
 
+        ordermanager.order(ordermanager.getCustomer(0), ordermanager.getRestaurant(0), dishesId, quantity);
 
 
         //viii. Borrar el segundo cliente.
