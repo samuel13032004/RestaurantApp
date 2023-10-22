@@ -12,8 +12,10 @@ public class OrderManager {
     private ArrayList<Restaurant> restaurants;
     private ArrayList<Dish> dishes;
 
-    public void addCustomer(String name, String surname, Address address){
-        Customer it = new Customer (name, surname, address);
+    public void addCustomer(String name, String surname){
+    //public void addCustomer(String name, String surname, Address address){
+        Customer it = new Customer (name, surname);
+        //Customer it = new Customer (name, surname, address);
         customers.add(it);
     }
 
@@ -22,8 +24,10 @@ public class OrderManager {
         Restaurant itRestarurant = new Restaurant(name, phone);
         restaurants.add(itRestarurant);
     }
-    public void addDish(String name, String description, int price){
-        Dish itDish = new Dish(name, description, price);
+    public void addDish(String name, String description, int price, OrderItem quantity){
+    //public void addDish(String name, String description, int price){  no es necesarioo aqui poner cantidad
+        Dish itDish = new Dish(name, description, price, quantity);
+        //Dish itDish = new Dish(name, description, price);
         dishes.add(itDish);
     }
 
@@ -32,11 +36,19 @@ public class OrderManager {
     }
 
     public Restaurant getRestaurant(int id){
-        return restaurants.remove(id);
+        return restaurants.get(id);
     }
 
     public Dish getDish(int id){
-        return dishes.remove(id);
+        return dishes.get(id);
     }
-    public order(){}
+
+    public Customer delCustomer(int id) {
+        return customers.remove(id);
+    }
+
+    public void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer>
+            quantity){
+
+    }
 }
