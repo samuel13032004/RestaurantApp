@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Customer {
     private String name;
-    //quitar array list de address
+
     private Address address;
 
     public String getName() {
@@ -29,7 +29,6 @@ public class Customer {
             address = new Address(street, number, postalCode, city);
     }
     private ArrayList<Order> orders;
-    //private Order order;
 
     public ArrayList<Order> getOrders(){
         return orders;
@@ -48,6 +47,5 @@ public class Customer {
         this.name = name;
         this.surname = surname;
         this.orders = new ArrayList<Order>();
-        //this.order = new Order();
     }
 }

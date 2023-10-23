@@ -19,7 +19,6 @@ public class Restaurant {
 	}
 
 	public Restaurant(String name, String number){
-	//public Restaurant(String name, Phone phone){
 		this.name = name;
 		if (Phone.isValid(number)){
 			this.number = number;

@@ -20,27 +20,21 @@ public class OrderManager {
         this.dishes = new ArrayList<>();
     }
     public void addCustomer(String name, String surname){
-    //public void addCustomer(String name, String surname, Address address){
         Customer it = new Customer (name, surname);
-        //Customer it = new Customer (name, surname, address);
         customers.add(it);
     }
 
-    //public void addRestaurant(String name,String phone) {
     public void addRestaurant(String name, String phone) {
 
         Restaurant itRestarurant = new Restaurant(name, phone);
         restaurants.add(itRestarurant);
     }
-    //public void addDish(String name, String description, int price, OrderItem quantity){
     public void addDish(String name, String description, int price, int ID){
-        //Dish itDish = new Dish(name, description, price, quantity);
         Dish itDish = new Dish(name, description, price, ID);
         dishes.add(itDish);
     }
 
     public Customer getCustomer(int id){
-    //public Customer getCustomer(int id){
         return customers.get(id);
     }
 

@@ -9,20 +9,15 @@ public class Main {
 
     public static void init(OrderManager ordermanager) {
 
-
-        //i. Init. Crear dos clientes.
-
         ordermanager.addCustomer("Andrés", "Martín");
         ordermanager.getCustomer(0).addAddress("Calle Mayor de Teror", 6, 35330, "Teror");
         ordermanager.addCustomer("Juan", "Rodríguez");
         ordermanager.getCustomer(1).addAddress("Avenida de las Canteras", 3, 35008, "Las Palmas");
 
-        //ii. Init. Crear dos restaurantes. (*) En el caso que el restaurante tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
 
         ordermanager.addRestaurant("Restaurante Casa Serafín", "928145021");
         ordermanager.addRestaurant("Restaurante La Aquarela", "928735891");
 
-        //iii. Init. Crear tres platos diferentes.
 
         ordermanager.addDish("Paella de Mariscos", "Una deliciosa paella preparada con arroz, calamares, gambas, mejillones y otros mariscos frescos", 18, 0);
         ordermanager.addDish("Solomillo de Ternera con Salsa de Champiñones", "Un solomillo de ternera a la parrilla, tierno y jugoso, acompañado de una rica salsa de champiñones con un toque de vino tinto", 24, 1);
@@ -36,14 +31,8 @@ public class Main {
         OrderManager ordermanager = new OrderManager();
         init(ordermanager);
 
-
-        //iv. Imprimir por pantalla los datos del primer restaurante.
-
-        //System.out.printf("Datos del primer restaurante: ", ordermanager.getRestaurant(0).getName() + ", "+ ordermanager.getRestaurant(0).getPhone()+"."+ "\n");
-
         System.out.println("Datos del primer restaurante: " + ordermanager.getRestaurant(0).getName() + ", " + ordermanager.getRestaurant(0).getNumber()) ;
 
-        //v. Imprimir por pantalla los datos del segundo cliente.
 
         System.out.println("Datos del segundo cliente: "+ ordermanager.getCustomer(1).getName() + " "+ ordermanager.getCustomer(1).getSurname());
 
@@ -54,25 +43,20 @@ public class Main {
             System.out.println("El segundo cliente no tiene una dirección registrada.");
         }
 
-        //vi. Imprimir por pantalla los datos del tercer plato.
-
         System.out.println("Datos del tercer plato: "+ ordermanager.getDish(2).getName() +" "+ ordermanager.getDish(2).getDescription() + ", " + ordermanager.getDish(2).getPrice()+" euros.");
-
-        //VII. crear order para primer cliente, al primer restaurante, que
-        //incluya los dos últimos platos del catálogo.
 
         Customer customer0 = ordermanager.getCustomer(0);
         Restaurant restaurant0 = ordermanager.getRestaurant(0);
 
         ArrayList<Integer> dishesId = new ArrayList<>();
-        dishesId.add(0); // ID of the first dish
-        dishesId.add(1); // ID of the second dish
-        dishesId.add(2); // ID of the third dish
+        dishesId.add(0);
+        dishesId.add(1);
+        dishesId.add(2);
 
         ArrayList<Integer> quantity = new ArrayList<>();
-        quantity.add(0); // Quantity of the first dish
-        quantity.add(1); // Quantity of the second dish
-        quantity.add(1); // Quantity of the third dish
+        quantity.add(0);
+        quantity.add(1);
+        quantity.add(1);
 
         ordermanager.order(customer0, restaurant0, dishesId, quantity);
 

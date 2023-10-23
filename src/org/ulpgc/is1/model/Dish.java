@@ -35,7 +35,6 @@ public class Dish {
         return ID;
     }
 
-    //public Dish(String name, String description, int price, OrderItem quantity){
     public Dish(String name, String description, int price, int ID){
         this.ID = ID;
         this.name = name;
