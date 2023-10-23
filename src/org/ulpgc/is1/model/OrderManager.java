@@ -27,7 +27,7 @@ public class OrderManager {
     }
 
     //public void addRestaurant(String name,String phone) {
-    public void addRestaurant(String name, Phone phone) {
+    public void addRestaurant(String name, String phone) {
 
         Restaurant itRestarurant = new Restaurant(name, phone);
         restaurants.add(itRestarurant);

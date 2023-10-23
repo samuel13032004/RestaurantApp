@@ -4,15 +4,28 @@ import java.util.ArrayList;
 
 public class Restaurant {
 	private String name;
-	//private String phone;
-	private Phone phone;
+
+	private String number;
+
 	private ArrayList<Menu> menus;
 	private ArrayList<Order> orders;
 
-	public Restaurant(String name, Phone phone){
+	public String getNumber() {
+		return number;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+	public Restaurant(String name, String number){
 	//public Restaurant(String name, Phone phone){
 		this.name = name;
-		this.phone = phone;
+		if (Phone.isValid(number)){
+			this.number = number;
+		} else {
+			this.number = "XXXX";
+		}
 		this.menus = new ArrayList<Menu>();
 		this.orders = new ArrayList<Order>();
 	}
@@ -25,14 +38,6 @@ public class Restaurant {
 		this.name = name;
 	}
 
-	public Phone getPhone() {
-		return phone;
-	}
-
-	//public void setPhone(String phone) {
-	public void setPhone(Phone phone) {
-		this.phone = phone;
-	}
 	public void addMenu(Menu newMenu){
 		this.menus.add(newMenu);
 	}

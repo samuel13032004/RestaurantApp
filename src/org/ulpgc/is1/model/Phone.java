@@ -14,12 +14,7 @@ public class Phone {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public boolean isValid(){
-		if (number.length() == 9){
-			return true;
-		} else {
-			setNumber("XXXX");
-			return false;
-		}
+	public static boolean isValid(String number){
+		return number.matches("\\d{9}");
 	}
 }

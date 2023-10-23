@@ -19,8 +19,8 @@ public class Main {
 
         //ii. Init. Crear dos restaurantes. (*) En el caso que el restaurante tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
 
-        ordermanager.addRestaurant("Restaurante Casa Serafín", new Phone("12345689"));
-        ordermanager.addRestaurant("Restaurante La Aquarela", new Phone("12445689"));
+        ordermanager.addRestaurant("Restaurante Casa Serafín", ("928145021"));
+        ordermanager.addRestaurant("Restaurante La Aquarela", ("928735891"));
 
         //iii. Init. Crear tres platos diferentes.
 
@@ -41,7 +41,7 @@ public class Main {
 
         //System.out.printf("Datos del primer restaurante: ", ordermanager.getRestaurant(0).getName() + ", "+ ordermanager.getRestaurant(0).getPhone()+"."+ "\n");
 
-        System.out.println("Datos del primer restaurante: " + ordermanager.getRestaurant(0).getName() + ", ") ;
+        System.out.println("Datos del primer restaurante: " + ordermanager.getRestaurant(0).getName() + ", " + ordermanager.getRestaurant(0).getNumber()) ;
 
         //v. Imprimir por pantalla los datos del segundo cliente.
 
