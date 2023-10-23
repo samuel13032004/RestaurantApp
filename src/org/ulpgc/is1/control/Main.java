@@ -61,14 +61,11 @@ public class Main {
         ordermanager.order(customer0, restaurant0, dishesId, quantity);
 
 
-        //viii. Borrar el segundo cliente.
         ordermanager.delCustomer(1);
 
-        //ix. Imprimir por pantalla el número de clientes.
 
         System.out.println("Número de clientes: " + ordermanager.getCustomersCount());
 
-        //x. Imprimir por pantalla el primer pedido del primer cliente, incluyendo el precio total del pedido.
         ArrayList<Order> customerOrders = customer0.getOrders();
 
         if (!customerOrders.isEmpty()) {
@@ -84,7 +81,6 @@ public class Main {
             }
 
 
-            // Calcula el precio total del pedido
             int total = firstOrder.price();
             System.out.println("Precio total del pedido: " + total + "€");
         } else {
