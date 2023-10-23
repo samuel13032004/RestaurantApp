@@ -3,8 +3,6 @@ package org.ulpgc.is1.model;
 public class OrderItem {
     private int quantity;
 
-    private int dishId = 0;
-
     private Dish dish;
 
     public int getQuantity() {
@@ -26,6 +24,6 @@ public class OrderItem {
     }
 
     public int getDishId() {
-        return dishId;
+        return dish.getID();
     }
 }

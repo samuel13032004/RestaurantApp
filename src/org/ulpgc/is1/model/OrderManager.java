@@ -33,9 +33,9 @@ public class OrderManager {
         restaurants.add(itRestarurant);
     }
     //public void addDish(String name, String description, int price, OrderItem quantity){
-    public void addDish(String name, String description, int price){
+    public void addDish(String name, String description, int price, int ID){
         //Dish itDish = new Dish(name, description, price, quantity);
-        Dish itDish = new Dish(name, description, price);
+        Dish itDish = new Dish(name, description, price, ID);
         dishes.add(itDish);
     }
 

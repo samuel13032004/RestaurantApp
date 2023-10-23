@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="Main final commit 2">
+    <list default="true" id="d3c59991-f7c6-4c81-aff6-a29cb4863cbf" name="Changes" comment="Main final commit 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Restaurant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +35,8 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="81d6bc61-06e9-4556-bee6-008184067d9b" />
-        <option name="url" value="https://github.com/samuel13032004/RestaurantApp.git" />
+        <option name="accountId" value="b85701d5-6b7a-4afe-b332-e41abc359ea6" />
+        <option name="url" value="https://github.com/samuel13032004/RestaurantApp" />
       </UrlAndAccount>
     </option>
   </component>
@@ -306,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697999307355</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Main final commit 3">
+      <option name="closed" value="true" />
+      <created>1698087379931</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1698087379931</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +365,8 @@
     <MESSAGE value="ordermanager.order() commit" />
     <MESSAGE value="Main final commit" />
     <MESSAGE value="Main final commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main final commit 2" />
+    <MESSAGE value="Main final commit 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main final commit 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

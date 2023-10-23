@@ -19,14 +19,14 @@ public class Main {
 
         //ii. Init. Crear dos restaurantes. (*) En el caso que el restaurante tenga un número de teléfono no válido se almacenará el valor: “XXXX”.
 
-        ordermanager.addRestaurant("Restaurante Casa Serafín", ("928145021"));
-        ordermanager.addRestaurant("Restaurante La Aquarela", ("928735891"));
+        ordermanager.addRestaurant("Restaurante Casa Serafín", "928145021");
+        ordermanager.addRestaurant("Restaurante La Aquarela", "928735891");
 
         //iii. Init. Crear tres platos diferentes.
 
-        ordermanager.addDish("Paella de Mariscos", "Una deliciosa paella preparada con arroz, calamares, gambas, mejillones y otros mariscos frescos", 18);
-        ordermanager.addDish("Solomillo de Ternera con Salsa de Champiñones", "Un solomillo de ternera a la parrilla, tierno y jugoso, acompañado de una rica salsa de champiñones con un toque de vino tinto", 24);
-        ordermanager.addDish("Calamares a la Romana:", "Los calamares a la romana son una opción perfecta como aperitivo o plato principal", 12);
+        ordermanager.addDish("Paella de Mariscos", "Una deliciosa paella preparada con arroz, calamares, gambas, mejillones y otros mariscos frescos", 18, 0);
+        ordermanager.addDish("Solomillo de Ternera con Salsa de Champiñones", "Un solomillo de ternera a la parrilla, tierno y jugoso, acompañado de una rica salsa de champiñones con un toque de vino tinto", 24, 1);
+        ordermanager.addDish("Calamares a la Romana", "Los calamares a la romana son una opción perfecta como aperitivo o plato principal", 12, 2);
 
 
 
@@ -65,13 +65,14 @@ public class Main {
         Restaurant restaurant0 = ordermanager.getRestaurant(0);
 
         ArrayList<Integer> dishesId = new ArrayList<>();
-        dishesId.add(0);
-        dishesId.add(1);
-        dishesId.add(2);
+        dishesId.add(0); // ID of the first dish
+        dishesId.add(1); // ID of the second dish
+        dishesId.add(2); // ID of the third dish
+
         ArrayList<Integer> quantity = new ArrayList<>();
-        quantity.add(0);
-        quantity.add(1);
-        quantity.add(1);
+        quantity.add(0); // Quantity of the first dish
+        quantity.add(1); // Quantity of the second dish
+        quantity.add(1); // Quantity of the third dish
 
         ordermanager.order(customer0, restaurant0, dishesId, quantity);
 
@@ -95,13 +96,13 @@ public class Main {
             System.out.println("Platos del pedido:");
             for (OrderItem item : firstOrder.getOrderItem()) {
                 Dish dish = ordermanager.getDish(item.getDishId());
-                System.out.println(" - " + dish.getName() + ": " + item.getQuantity() + " x €" + dish.getPrice());
+                System.out.println(" - " + dish.getName() + ": " + item.getQuantity() + " x " + dish.getPrice() + "€");
             }
 
 
             // Calcula el precio total del pedido
-            double total = firstOrder.price();
-            System.out.println("Precio total del pedido: €" + total);
+            int total = firstOrder.price();
+            System.out.println("Precio total del pedido: " + total + "€");
         } else {
             System.out.println("El cliente no ha realizado ningún pedido.");
         }
