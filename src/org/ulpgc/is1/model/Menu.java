@@ -34,6 +34,10 @@ public class Menu {
     }
 
     public void addDish(Dish dish){
-        dishes.add(dish);
+        if(!dishes.contains(dish)){
+            dishes.add(dish);
+        }else{
+            System.out.println("El plato ya existe en el menú.")
+        }
     }
 }

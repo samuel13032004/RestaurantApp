@@ -38,7 +38,11 @@ public class Restaurant {
 	}
 
 	public void addMenu(Menu newMenu){
-		this.menus.add(newMenu);
+		if(!menus.contains((newMenu))){
+			menus.add(newMenu);
+		}else{
+			System.out.println("El menú ya existe en este restaurante.");
+		}
 	}
 	public Menu getMenu(int i){
 		return this.menus.get(i);
